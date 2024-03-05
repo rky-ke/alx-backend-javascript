@@ -32,5 +32,5 @@ Hence, `console.log(taskBlock(false));` also returns `[false, true]`.
 
 ### Function body:
 - **No change:** The code within the curly braces remains the same.
-- **Note:** Due to the single-statement nature of the function, the implicit return eliminated the need for the `return` keyword.
 
+# 3. Parameter defaults
