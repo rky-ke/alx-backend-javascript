@@ -20,3 +20,17 @@ When the function `taskBlock` is called with the argument `false`, the condition
 
 Hence, `console.log(taskBlock(false));` also returns `[false, true]`.
 
+# 2. Arrow functions
+## Changes made:
+
+### Function declaration:
+- **Before:** `function add(newNeighborhood) {`
+- **After:** `(newNeighborhood) => {`
+  - Removed the `function` keyword.
+  - Added parentheses around the parameter.
+  - Replaced the colon (`:`) with an arrow (`=>`).
+
+### Function body:
+- **No change:** The code within the curly braces remains the same.
+- **Note:** Due to the single-statement nature of the function, the implicit return eliminated the need for the `return` keyword.
+
