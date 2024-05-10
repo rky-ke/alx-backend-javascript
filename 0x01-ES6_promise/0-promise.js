@@ -27,5 +27,6 @@ function getResponseFromAPI() {
           // The error handler function, executed if the Promise is rejected
           console.error('Error:', error);
         });
-      
+    
+    return myPromise;
 }
