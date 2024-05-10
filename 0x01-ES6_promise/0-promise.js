@@ -1,5 +1,5 @@
 function getResponseFromAPI() {
-    const myPromise = new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
         // Perform an asynchronous operation, such as fetching data from a server
         // If the operation is successful, call the resolve function with the result
         // If there's an error, call the reject function with an error object
@@ -27,6 +27,4 @@ function getResponseFromAPI() {
           // The error handler function, executed if the Promise is rejected
           console.error('Error:', error);
         });
-    
-    return myPromise;
 }
