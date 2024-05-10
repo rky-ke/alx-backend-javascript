@@ -1,4 +1,4 @@
-function getResponseFromAPI() {
+export default function getResponseFromAPI() {
     return new Promise((resolve, reject) => {
         // Perform an asynchronous operation, such as fetching data from a server
         // If the operation is successful, call the resolve function with the result
