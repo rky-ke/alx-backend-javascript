@@ -1,5 +1,9 @@
 export default function createIteratorObject(report) {
-  const emp = Object.values(report.allEmployees);
-  // return emp.flat();
-  return [].concat(...emp);
+  return (function* _() {
+    for (const department of Object.values(report.allEmployees)) {
+      for (const employee of department) {
+        yield employee;
+      }
+    }
+  }());
 }
